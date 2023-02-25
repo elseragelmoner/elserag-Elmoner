@@ -1,2 +1,135 @@
 # mousa
-html, css and jsp
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>مسابقة السراج المنير القرآنية الرمضانية</title>
+	<style>
+		body {
+			direction: rtl;
+			background-color: #f3f3f3;
+			font-family: AL-Mateen;
+			margin: 0;
+			padding: 0;
+                  } 
+                                     
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f4f4f4;
+		}
+		.header {
+			background-color: #007000;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		h1 {
+			margin-top: 0;
+			font-size: 60px;
+			font-weight: Bold;
+  		}
+		.form {
+			background-color: # #0060;
+			padding: 20px;
+			border-radius: 5px;
+		}
+		.form label {
+			display: block;
+			margin-bottom: 10px;
+                          font-size: 20px;
+			font-weight: bold;
+                         font-color: 004000;
+		}
+		.form input[type="text"],
+                 .form input[type="number"],
+		.form input[type="email"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			font-size: 20px;
+                		}
+		.form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: yes;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		.form input[type="submit"]:hover {
+			background-color: #555;
+		}
+		.footer {
+			background-color: #007000;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			margin-top: 20px;
+                       font-size:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<h1>مسابقة السراج المنير القرآنية الرمضانية</h1>
+			<img src="رمضان.jpg" alt="C:\Users\User\Desktop\المسابقة\lk">
+		</header>
+		<main class="main">
+			<p>مرحبًا بكم في مسابقة السراج المنير القرآنية الرمضانية
+ يرجى تعبئة النموذج التالي للتسجيل في المسابقة:</p>
+			<form class="form">
+				<label for="name">الاسم:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="age">العمر:</label>
+				<input type="number" id="age" name="age" required>
+			        <label for="gender">الجنس:</label>
+			        <select id="gender" name="gender" required>
+				<option value="male">ذكر</option>
+				<option value="female">أنثى</option>
+                                    </select>
+			        <label for="phone">رقم الهاتف:</label>
+			        <input type="tel" id="phone" name="phone" required>
+				<label for="branch">الشعبة المتقدم لها:</label>
+			<select id="department" name="department" required>
+			<option value="">يرجى اختيار الشعبة</option>
+			<option value="حفظ القرآن الكريم">حفظ القرآن الكريم</option>
+                                    <option value="ثلاثة أرباع القرآن">ثلاثة أرباع القرآن</option>
+			<option value="نصف القرآن">نصف القرآن</option>
+			<option value="ثلث القرآن">ثلث القرآن</option>
+			<option value="ربع القرآن">ربع القرآن</option>
+			<option value="خمسة أجزاء">خمسة أجزاء</option>
+			<option value="أربعة أجزاء">أربعة أجزاء</option>
+			<option value="جزء قد سمع">جزء قد سمع</option>
+			<option value="جزء تبارك">جزء تبارك</option>
+			<option value="جزء عم">جزء عم</option>
+			<option value="التجويد والقراءات الشرعية">التجويد والقراءات الشرعية</option>
+			<option value="الصوت الحسن">الصوت الحسن</option>
+		</select>
+
+			<label for="address">العنوان:</label>
+			<input type="text" id="address" name="address" required>
+<label for="documents">تحميل الوثائق المطلوبة:</label>
+  <input type="file" id="documents" name="documents" accept=".pdf, .doc, .docx" required>
+
+			<input type="submit" value="تسجيل">
+		</form>
+		<p>شروط التقدم للمسابقة:</p>
+		<ul>
+			<li>يجب أن يكون المشارك من طلاب مركز السراج المنير.</li>
+			<li>يجب أن يكون المشارك من سكان قرية غزالة الخيس.</li>
+<li>يجب تحميل صورة شخصية، وصورة شهادة الميلاد.</li>
+	</ul>
+	</main>
+	<footer class="footer">
+		<p> أسرة السراج المنير تتمني لكم التفوق المستمر في حفظ كتاب الله; &copy2023</p>
+<div>تاريخ اليوم: <time datetime="2023-02-24">24 فبراير 2023</time></div>
+  <div>عدد الزوار: <span id="visitors">0</span></div>
+	</footer>
+</div>
+
